@@ -3,14 +3,11 @@ import sys
 
 
 def recur_factorial(n):
-    """Function to return the factorial
-    of a number using recursion"""
-    if n == 1:
-        return n
-    else:
-        return n*recur_factorial(n-1)
-
-
+    def recur_factorial(n):
+    a=1
+    for i in range(1,n+1):
+        a=a*i
+    return a 
 if __name__ == '__main__':
     arg = sys.argv
     print(recur_factorial(int(arg[1])))
